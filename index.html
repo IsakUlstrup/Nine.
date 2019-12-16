@@ -11,7 +11,7 @@
 </head>
 <body>
   <!-- <h1 class="title">Nine.</h1> -->
-  <div class="preview">
+  <div class="preview" onClick="toggleFreeze()">
     <!-- row 1 -->
     <div id="00" class="pixel"></div>
     <div id="10" class="pixel"></div>
@@ -25,7 +25,7 @@
     <div id="12" class="pixel"></div>
     <div id="22" class="pixel"></div>
   </div>
-  <div class="viewfinder">
+  <div class="viewfinder" onClick="toggleDiv('grid')">
     <div class="grid" id="grid">
       <div class="third bb br"></div>
       <div class="third bb br"></div>
@@ -39,10 +39,9 @@
     </div>
     <video id="video" width="1000" height="1000" autoplay muted playsinline></video>
   </div>
-  <div class="controls">
+  <!-- <div class="controls">
     <button onClick="toggleFreeze()">Freeze</button>
-    <button onClick="toggleDiv('grid')">Grid</button>
-  </div>
+  </div> -->
 
 
   <canvas style="display:none" id="canvas" width="500" height="500"></canvas>
