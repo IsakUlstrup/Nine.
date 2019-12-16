@@ -6,32 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>Nine.</title>
-  <style>
-    body {
-      background: #131313;
-      image-rendering: pixelated;
-      padding: 12%;
-    }
-    video {
-      width: 100%    !important;
-      height: auto   !important;
-      margin-top: 2%;
-    }
-    .gridContainer {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      position: relative;
-      width: 100%;
-    }
-    .pixel {
-      width: 100%;
-      height: 0;
-      padding-top: 100%;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class="gridContainer">
+  <div class="preview">
     <!-- row 1 -->
     <div id="00" class="pixel"></div>
     <div id="10" class="pixel"></div>
@@ -46,6 +24,9 @@
     <div id="22" class="pixel"></div>
   </div>
   <video id="video" width="500" height="500" autoplay muted playsinline></video>
+  <button onClick="toggleFreeze()">Freeze</button>
+
+
   <canvas style="display:none" id="canvas" width="500" height="500"></canvas>
 
   <script src="main.js"></script>
