@@ -24,6 +24,11 @@ navigator.mediaDevices.getUserMedia(constraints)
   console.log(err)
 })
 
+function toggleDiv(id) {
+  var div = document.getElementById(id);
+  div.style.display = div.style.display == "none" ? "grid" : "none";
+}
+
 function toggleFreeze() {
   if (freezeFrame === true) {
     freezeFrame = false

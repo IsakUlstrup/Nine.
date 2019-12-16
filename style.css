@@ -1,19 +1,8 @@
-button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width: 100%;
-  margin-top: 2%;
-}
 body {
   background: #131313;
   image-rendering: pixelated;
   padding: 12%;
+  max-width: 800px;
 }
 video {
   width: 100%    !important;
@@ -37,6 +26,32 @@ video {
 .grid {
   position: absolute;
 }
-.third {
-  border: 1px solid red;
+.controls {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+.controls button {
+  flex-grow: 1;
+  background-color: rgb(88, 12, 85);
+  border: none;
+  color: white;
+  padding: 5%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.controls :first-child {
+  margin-right: 2%;
+}
+
+/* border styles */
+.br {
+  border-right: 1px solid rgba(255, 255, 0, 0.5);
+}
+.bb {
+  border-bottom: 1px solid rgba(255, 255, 0, 0.5);
 }
