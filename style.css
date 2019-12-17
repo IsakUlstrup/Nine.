@@ -4,7 +4,7 @@
   src: url('media/diavlo.otf');
 }
 body {
-  background: linear-gradient(to bottom left, #fdaf1e, #860e62);;
+  background: linear-gradient(to bottom left, #fdaf1e, #860e62, #fdaf1e) #fdaf1e;
   image-rendering: pixelated;
   padding: 0.5%;
 }
