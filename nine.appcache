@@ -1,8 +1,7 @@
 CACHE MANIFEST
-# 0.0.5
+# 0.0.6
 
 CACHE:
 index.html
 style.css
 main.js
-media/diavlo.otf

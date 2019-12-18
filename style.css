@@ -1,77 +1,45 @@
-/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */
-@font-face {
-  font-family: 'Diavlo';
-  src: url('media/diavlo.otf');
-}
 body {
-  /* background: linear-gradient(to bottom left, #fdaf1e, #860e62, #fdaf1e) #fdaf1e; */
-  background: #fff;
-  image-rendering: pixelated;
-  padding: 0.5%;
+  background: #131313;
+  padding: 1% 5%;
 }
 video {
+  display: block;
   width: 100%    !important;
   height: auto   !important;
 }
 .content {
-  background: #131313;
+  background: linear-gradient(to bottom left, #191919, #131313);
   width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 5%;
-  box-shadow: -2px 2px 10px 0px #131313;
+  box-shadow: inset -2px 2px 10px 0px rgba(0,0,0,1);
   border-radius: 3px;
-}
-.title {
-  margin: 4%;
-  font-size: 90px;
-  font-weight: bolder;
-  text-align: center;
-  font-family: 'Diavlo';
-  background: url('media/extra_clean_paper.png');
-  /* background: linear-gradient(to bottom left, #fdaf1e, #860e62); */
-  color: transparent;
-  text-shadow: 0px 2px 3px rgba(255,255,255,0.1);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
 }
 .preview, .grid {
   display: grid;
   grid-template-columns: auto auto auto;
   width: 100%;
 }
-.pixel, .third {
+.preview {
+  border-radius: 3px 3px 0px 0px;
+  overflow: hidden;
+}
+.viewfinder {
+  border-radius: 0px 0px 3px 3px;
+  overflow: hidden;
+}
+.pixel {
   width: 100%;
   height: 0;
   padding-top: 100%;
 }
 .viewfinder {
   position: relative;
-  width: 100%;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 .grid {
   position: absolute;
-}
-.controls {
-  margin: 2% auto;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-evenly;
-}
-.controls button {
-  flex-grow: 1;
-  background-color: rgb(88, 12, 85);
-  border: none;
-  color: white;
-  padding: 5%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-.controls :first-child {
-  margin-right: 3%;
 }
 
 /* border styles */
