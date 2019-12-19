@@ -17,8 +17,9 @@ var freezeFrame = false
 // camera access
 navigator.mediaDevices.getUserMedia(constraints)
 .then(function(stream) {
-  video.srcObject = stream;
+  video.srcObject = stream
   video.play()
+  window.scrollTo(0, 50)
 })
 .catch(function(err) {
   console.log(err)
@@ -26,7 +27,7 @@ navigator.mediaDevices.getUserMedia(constraints)
 
 function toggleDiv(id) {
   var div = document.getElementById(id);
-  div.style.display = div.style.display == "none" ? "grid" : "none";
+  div.style.display = div.style.display == "none" ? "grid" : "none"
 }
 
 function toggleFreeze() {
@@ -69,8 +70,8 @@ function update() {
   }
 }
 
-window.onload = function() {
-  setTimeout(function() { window.scrollTo(0, 1) }, 100)
-}
+// window.onload = function() {
+//   setTimeout(function() { window.scrollTo(0, 50) }, 100)
+// }
 
 setInterval(update, 100)
